@@ -1,0 +1,19 @@
+syntax = "proto3";
+package com.kafka.code.model.model;
+option java_outer_classname="KafkaBasicsProto";
+option java_package = "com.kafka.code.model.proto";
+option java_multiple_files= true;
+
+
+
+message kafkaRequest{
+int32 price=1;
+int32 qty=2;
+string name=3;
+}
+
+message kafkaResponse{
+int32 error_code=1;
+string error_message=2;
+int32 order_value=3;
+}
